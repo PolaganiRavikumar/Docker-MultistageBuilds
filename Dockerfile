@@ -1,7 +1,7 @@
 FROM node:20 As builder
 WORKDIR /opt/server
-COPY package.json
-COPY *.js.
+COPY package.json .
+COPY *.js .
 RUN npm install
 
 FROM node:20.18.0-alpine3.20
